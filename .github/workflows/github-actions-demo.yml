@@ -5,6 +5,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      deploy_environment:
+        required: true
+        type: string   
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
